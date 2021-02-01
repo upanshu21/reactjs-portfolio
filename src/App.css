@@ -1,38 +1,203 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box ;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.6)),
+                    url("/src/images/wp2234615-coding-wallpapers.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* Navbar */
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  top: 0;
+  position: fixed;
+  background: #1f2235;
+  z-index: 1;
+}
+
+.navbar_container {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.navbar__right {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar__right li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 15px;
+}
+
+.navbar__left-logo {
+  width: 100%;
+  height: auto;
+}
+
+/* Banner */
+
+.row{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.col-6 {
+  width: 50%;
+  padding: 40px;
+}
+
+.header__content{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+}
+
+.header__ul {
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.header__ul li {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ff4a57;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+
+}
+
+.header__ul li:first-child{
+  margin-left: 0px;
+}
+
+.header__section h1 {
+  font-size: 57px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.header__section p {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 40px;
+  margin-bottom: 50px;
+}
+
+.header__buttons {
+  position: relative;
+}
+
+.btn  {
+  outline: none;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-outline {
+  background-color: trasparent;
+  border: 2px solid #ff4a57;
+  border-radius: 200px;
+  padding: 16px 50px;
+}
+
+.btn-outline:hover {
+  background-color: #ff4a57;
+}
+
+
+.container {
+  width: 1450px;
+  margin: 0 auto;
+}
+
+/* services */
+
+.services{
+  background: #1f2235;
+  padding: 90px 0;
+  color: #fff;
+}
+
+.common {
+  width: 35%;
+  margin: 20px auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading {
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #ff4a57;
+  font-size: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mainHeader {
+  font-size: 16px;
+  color: #dfdfdf;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.commonBorder {
+  background: #ff4a57;
+  height: 3px;
+  width: 70px;
+  margin: 20px auto;
 }
 
-.App-link {
-  color: #61dafb;
+.col-4 {
+  width: 33.33%;
+  padding: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.service-box{
+  padding: 40px;
+  background: #23263a;
+  color: #fff;
+  box-shadow: 10px 10px 5px #06081a;
+  height: 100%;
+}
+
+.commonIcons {
+  font-size: 60px;
+  color: #ff4a57;
+  margin-bottom: 15px;
+  
+}
+
+.service__box-header {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.service__box-p {
+  font-size: 14px;
+  color: #dfdfdf;
 }
