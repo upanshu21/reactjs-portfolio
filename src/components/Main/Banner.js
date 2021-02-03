@@ -1,5 +1,6 @@
 import React from 'react'
 import {FaFacebookF, FaTwitter,FaPinterestP,FaInstagram} from "react-icons/fa"
+import './Banner.css'
 
 
 const Banner = () => {
@@ -32,7 +33,6 @@ const Banner = () => {
                         <p>{state.text}</p>
                         <div className="header__buttons">
                             <a href="" className="btn btn-outline"> My Portfolio</a>
-                    
                         </div>
                         </div>
                     </div>
