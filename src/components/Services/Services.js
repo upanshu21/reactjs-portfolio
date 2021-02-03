@@ -4,6 +4,7 @@ import {GrReactjs} from "react-icons/gr"
 import {SiJava} from "react-icons/si"
 import {RiTerminalBoxLine} from "react-icons/ri"
 import {IoMdCube} from "react-icons/io"
+import './Services.css'
 
 
 

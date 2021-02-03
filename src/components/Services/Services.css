@@ -1,0 +1,89 @@
+.services{
+    background: #1f2235;
+    padding: 90px 0;
+    color: #fff;
+  }
+  
+.common {
+    width: 35%;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+.heading {
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #ff4a57;
+    font-size: 15px;
+  }
+  
+.mainHeader {
+    font-size: 16px;
+    color: #dfdfdf;
+  }
+  
+.commonBorder {
+    background: #ff4a57;
+    height: 3px;
+    width: 70px;
+    margin: 20px auto;
+  }
+  
+.col-4 {
+    width: 33.33%;
+    padding: 40px;
+  }
+  
+.service-box{
+    padding: 40px;
+    background: #23263a;
+    color: #fff;
+    box-shadow: 10px 10px 5px #06081a;
+    height: 100%;
+  }
+  
+.commonIcons {
+    font-size: 60px;
+    color: #ff4a57;
+    margin-bottom: 15px;
+  }
+  
+.service__box-header {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  
+.service__box-p {
+    font-size: 14px;
+    color: #dfdfdf;
+  }
+
+@media (max-width: 1465px) {
+
+    .header__section h1 {
+    
+        font-size: 35px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      .header__section p {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 30px;
+        margin-bottom: 50px;
+      }
+    
+      .common {
+        width: 100%;
+      }
+
+      .col-6 {
+        width: 100%;
+      }
+    
+      .col-4 {
+        width: 100%;
+      }
+
+}
