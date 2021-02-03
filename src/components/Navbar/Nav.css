@@ -7,7 +7,7 @@
     z-index: 1;
   }
   
-  .navbar_container {
+.navbar_container {
     display: flex;
     height: 100px;
     align-items: center;
@@ -15,12 +15,12 @@
     overflow: hidden;
   }
   
-  .navbar__right {
+.navbar__right {
     display: flex;
     list-style-type: none;
   }
   
-  .navbar__right li a {
+.navbar__right li a {
     text-decoration: none;
     color: #fff;
     font-weight: 500;
@@ -28,12 +28,12 @@
     padding: 15px;
   }
   
-  .navbar__left-logo {
+.navbar__left-logo {
     width: 100%;
     height: auto;
   }
 
-  @media (max-width: 1465px) {
+@media (max-width: 1465px) {
 
     .navbar__right {
         flex-direction: column;
