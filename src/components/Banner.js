@@ -32,7 +32,6 @@ const Banner = () => {
                         <p>{state.text}</p>
                         <div className="header__buttons">
                             <a href="" className="btn btn-outline"> My Portfolio</a>
-                    
                         </div>
                         </div>
                     </div>

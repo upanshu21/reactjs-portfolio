@@ -1,4 +1,6 @@
 import React from 'react'
+import {IoIosArrowDropleft} from "react-icons/io"
+import slide from './slide'
 
 
 const Nav = () => {
@@ -19,8 +21,10 @@ const Nav = () => {
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
+                <IoIosArrowDropleft className="drop" />
                 </div>
             </div>
+            <script async= "true"src="/slide.js" type="text/javascript" />
         </div>
     )
 }
