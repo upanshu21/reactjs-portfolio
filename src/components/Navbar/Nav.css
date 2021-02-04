@@ -50,10 +50,10 @@
   .navbar__right {
     flex-direction: column;
     display: flex;
-    width: 50%;
+    width: 40%;
     right: 0px;
     height: 100vh;
-    top: 8vh;
+    top: 11vh;
     align-items: center;
     background: #1f2235;
     position: absolute;
@@ -76,6 +76,6 @@
   }
 
   .slider {
-    display: flex;
+    display: block;
   }
 }
