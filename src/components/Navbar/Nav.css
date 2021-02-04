@@ -1,55 +1,81 @@
 .navbar {
-    width: 100%;
-    height: 100px;
-    top: 0;
-    position: fixed;
-    background: #1f2235;
-    z-index: 1;
-  }
-  
+  width: 100%;
+  height: 100px;
+  top: 0;
+  position: fixed;
+  background: #1f2235;
+  z-index: 1;
+}
+
 .navbar_container {
-    display: flex;
-    height: 100px;
-    align-items: center;
-    justify-content: space-between;
-    overflow: hidden;
-  }
-  
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
 .navbar__right {
-    display: flex;
-    list-style-type: none;
-  }
-  
+  display: flex;
+  list-style-type: none;
+}
+
 .navbar__right li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    font-size: 18px;
-    padding: 15px;
-  }
-  
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 15px;
+}
+
 .navbar__left-logo {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+}
+
+.slider {
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1465px) {
+
+  .navbar__left-logo {
+    position: relative;
   }
 
-@media (max-width: 1465px) {
-
-    .navbar__right {
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        background: #1f2235;
-        position: fixed;
-        top: 0;
-        left: 0;
-      }
-    
-      .navbar__right li a {
-        display: block;
-        padding: 20px 0;
-        font-size: 14px;
-      }
-    
+  .navbar__right {
+    flex-direction: column;
+    display: flex;
+    width: 50%;
+    right: 0px;
+    height: 100vh;
+    top: 8vh;
+    align-items: center;
+    background: #1f2235;
+    position: absolute;
+    padding: 40px;
+    transform: translateX(100%);
   }
-  
+
+  .navbar__right li {
+    padding: 25px;
+  }
+
+  .navbar__right li a:last-of-type {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .navbar__right li a {
+    display: block;
+    padding: 20px 0;
+    font-size: 14px;
+  }
+
+  .slider {
+    display: flex;
+  }
+}
