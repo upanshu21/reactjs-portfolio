@@ -17,14 +17,12 @@ jobs:
     executor: aws-ecr/default
     steps:
       - aws-ecr/build-and-push-image:
-          parameters:
-              skip_when_tags_exist:
-              default: false
           create-repo: true
           dockerfile: Dockerfile
           path: .
           repo: react-portfolio
           tag: $CIRCLE_SHA1
+          push_image: true
 
 
 workflows: 
