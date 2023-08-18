@@ -27,8 +27,10 @@ workflows:
       - build
       - aws-ecr/build_and_push_image:
           auth:
-            - aws-cli/setup:   
+            - aws-cli/setup:  
+                profile_name: upanshu
                 role_arn: $AWS_ARN
+                role_session_name: CircleCi
           context: CircleCI_OIDC_Token
           region: AWS_REGION_NAME
           dockerfile: Dockerfile
