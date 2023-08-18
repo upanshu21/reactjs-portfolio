@@ -28,9 +28,9 @@ workflows:
       - aws-ecr/build_and_push_image:
           auth:
             - aws-cli/setup:  
-                profile_name: upanshu
-                role_arn: $AWS_ARN
-                role_session_name: CircleCi
+                aws_access_key_id: AWS_ACCESS_KEY
+                aws_secret_access_key: AWS_ACCESS_SECRET
+                region: AWS_REGION_NAME
           context: CircleCI_OIDC_Token
           dockerfile: Dockerfile
           path: .
