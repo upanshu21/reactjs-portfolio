@@ -32,7 +32,6 @@ workflows:
                 role_arn: $AWS_ARN
                 role_session_name: CircleCi
           context: CircleCI_OIDC_Token
-          region: AWS_REGION_NAME
           dockerfile: Dockerfile
           path: .
           repo: frontend
