@@ -34,6 +34,7 @@ workflows:
                 aws_secret_access_key: AWS_SECRET_ACCESS_KEY
                 region: AWS_REGION
           context: CircleCI_OIDC_Token
+          executors: base
           platform: linux/amd64
           dockerfile: Dockerfile
           path: .
