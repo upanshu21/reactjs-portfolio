@@ -28,7 +28,7 @@ workflows:
       - aws-ecr/build_and_push_image:
           auth:
             - aws-cli/setup:   
-                role_arn: '${ARN}'
+                role_arn: ARN
           context: CircleCI_OIDC_Token
           region: AWS_REGION_NAME
           dockerfile: Dockerfile
