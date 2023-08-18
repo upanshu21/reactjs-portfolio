@@ -1,35 +1,36 @@
 version: 2.1
 
 orbs:
-  aws-cli: circleci/aws-cli@2.0
-  aws-ecr: circleci/aws-ecr@9.0.0
+  node: circleci/node@5.1.0
 
 jobs:
-  aws-cli-cred-setup:
-    executor: aws-cli/default
+  build:
+    executor:
+      name: node/default
+      tag: 14.15.1
     steps:
-      - aws-cli/setup:
-          aws-access-key-id: AWS_ACCESS_KEY
-          aws-secret-access-key: AWS_ACCESS_SECRET
-          aws-region: AWS_REGION_NAME
-      - run: aws ec2 describe-regions
-  build_and_push_image:
-    executor: aws-ecr/default
-    steps:
-      - aws-ecr/build-and-push-image:
-          create-repo: true
-          dockerfile: Dockerfile
-          path: .
-          repo: react-portfolio
-          tag: $CIRCLE_SHA1
-          push_image: true
+      - checkout 
+      - node/install-packages:
+          pkg-manager: npm
+      - run: 
+          command: npm install
+          name: install
+      - run: 
+          command: npm run build
+          name: build
 
 
-workflows: 
-  aws-cli:
+
+
+
+
+
+workflows:
+  example-workflow:
     jobs:
-      - aws-cli-cred-setup:
-          context: aws
+      - build
+
+          
 
 
 
