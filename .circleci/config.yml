@@ -37,7 +37,8 @@ workflows:
           dockerfile: Dockerfile
           path: .
           repo: frontend
-          tag: latest
+          tag: $CIRCLE_SHA1
+          skip_when_tags_exist: true
           requires:
             - build
 
