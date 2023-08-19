@@ -30,7 +30,7 @@ workflows:
           auth:
             - aws-cli/setup:  
                 role_arn: $AWS_ARN
-                role_session_name: 'CircleCi'
+                role_session_name: 'CircleCI'
           context: CircleCI_OIDC_Token
           platform: linux/amd64
           dockerfile: Dockerfile
